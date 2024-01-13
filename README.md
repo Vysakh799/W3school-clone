@@ -1,1 +1,1 @@
-# W3school-static
+# W3school
