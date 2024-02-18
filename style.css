@@ -3,6 +3,7 @@
 body{
     margin: 0px;
     font-family: "Open Sans", sans-serif;
+    width: 100%;
 }
 .nav_bar1{
     /* background-color: aquamarine; */
@@ -39,7 +40,7 @@ body{
     margin-left: 2px;
 }
 .nav_content div:hover{
-    background-color: rgb(46, 210, 46);
+    background-color: #04AA6D;
     color: white;
 }
 .search{
@@ -140,9 +141,9 @@ body{
     align-items: center;
 }
 .login{
-    position: absolute;
+    position: fixed;
     z-index: -1;
-    right:53px;
+    right:3.5%;
     width:115px ;
     color: black;
     background-color: rgb(154, 230, 154);
@@ -151,12 +152,14 @@ body{
     margin-left: 18px;
 }
 .signup{
-    background-color: rgb(46, 226, 46);
+    position: fixed;
+    right: 8.5%;
+    background-color: #04AA6D;
 }
 .nav_bar2{
     height: 25px;
     display: flex;
-    background-color: rgb(39, 37, 37);
+    background-color: rgb(15, 13, 30);
     color: white;
     /* position: fixed; */
 }
@@ -164,7 +167,7 @@ body{
     background-color: black;
 }
 .nav_bar2 div:active{
-    background-color: rgb(10, 249, 113);
+    background-color: #04AA6D;
 }
 .items{
     flex: 1;
@@ -174,27 +177,30 @@ body{
     padding: 3px;
 }
 .content{
-    background-color: rgb(39, 37, 37);
+    background-color: rgb(15, 13, 30);
     color: white;
     display: flex;
+    width: 100%;
     flex-direction: column;
     align-items: center;
 }
 .mainhead{
-    font-size: 67px;
+    font-size: 58px;
     font-weight: 700;
-    margin-top: 20px;
+    margin-top: 45px;
 }
 .subhead1, .subhead2{
-    font-size:25px;
+    font-size:21px;
     margin-top: -15px;
+    font-weight:600;
 }
 .boxes{
     display: flex;
     /* background-color: rgb(236, 142, 2); */
-    margin-top: 60px;
-    width: 1200px;
-    height:600px;
+    margin-top: 65px;
+    width: 1160px;
+    height:500px;
+    /* border-radius: 10px; */
 }
 .box{
     flex: 1;
@@ -236,6 +242,10 @@ body{
     border: 1px solid white;
 
 }
+.Lbootstrap:hover{
+    background-color: white;
+    color: black;
+}
 .Lbootstrap p{
     font-size: 18px;
 }
@@ -247,10 +257,30 @@ body{
     margin-top: 20px;
     padding: 10px;
     font-size: 15px;
+    text-align:center;
 }
 @media (max-width:800px){
     .boxes{
         display: block;
         width: 100%;
+    }
+    .content{
+        width: 100%;
+    }
+    .inpu{
+        display: none;
+    }
+    .service3{
+        display: none;
+    }
+}
+@media (max-width:1200px){
+    .service1{
+        display: none;
+    }
+}
+@media (max-width:1100px){
+    .service2{
+        display: none;
     }
 }
