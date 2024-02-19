@@ -6,12 +6,19 @@ body{
     width: 100%;
 }
 .nav_bar1{
-    /* position: fixed; */
-    /* background-color: white ; */
+    margin-top: 0px;
+    position: fixed;
+    background-color: white ;
     display: flex;
+    flex-direction: row;
     height: 60px;
     /* position: fixed; */
     
+}
+.main{
+    width: 100%;
+    height: 100%;
+    margin: 0px;
 }
 .logo img{
     width: 40px;
@@ -29,12 +36,24 @@ body{
     display: flex;
     /* background-color: red; */
 }
-.nav_item1, .nav_item2, .nav_item3, .nav_item4{
+.nav_item1, .nav_item2, .nav_item3, .nav_item4, .nav_menu{
     display: flex;
     flex: 1;
     justify-content: center;
     /* background-color: blueviolet; */
 }
+.nav_menu{
+    display: none;
+}
+.dropdown_menu{
+    display: none;
+    background-color: aliceblue;
+    width: fit-content;
+}
+.dropdown_menu a{
+    text-decoration: none;
+}
+
 .bi-caret-down-fill{
     font-size: 12px;
     margin-top: 3px;
@@ -79,15 +98,15 @@ body{
     font-size: 18px;
 } */
 .rightside{
-    width: 1500px;
+    width: 500px;
     display: flex;
     justify-content: flex-end;
     /* background-color: chartreuse; */
 }
 .services{
-    position: fixed;
+    /* position: fixed; */
     display: flex;
-    width: 400px;
+    width: 370px;
     right: 15%;
     top: 1.8%;
     /* background-color: cornsilk; */
@@ -135,6 +154,7 @@ body{
     /* background-color: cornflowerblue;     */
 }
 .btn{
+    position: fixed;
     background-color: brown;
     border-radius: 25px;
     width: 90px;
@@ -147,13 +167,13 @@ body{
 .login{
     position: fixed;
     /* z-index: -1; */
-    right:3.5%;
+    right:10px;
     width:115px ;
     color: black;
     background-color: rgb(154, 230, 154);
 }
 .login p{
-    margin-left: 18px;
+    margin-left: 5%;
 }
 .signup{
     position: fixed;
@@ -164,9 +184,12 @@ body{
 .nav_bar2{
     height: 25px;
     display: flex;
+    flex-direction: row;
+    padding-top: 4%;
     background-color: rgb(15, 13, 30);
     color: white;
     /* position: fixed; */
+    /* margin-top: 160px; */
 }
 .nav_bar2 div:hover{
     background-color: black;
@@ -203,8 +226,8 @@ body{
     display: flex;
     /* background-color: rgb(236, 142, 2); */
     margin-top: 65px;
-    width: 1160px;
-    height:500px;
+    width: 60%;
+    height:30%;
     /* border-radius: 10px; */
 }
 .box{
@@ -215,8 +238,8 @@ body{
 }
 .smallbox{
     /* background-color:green ; */
-    width: 48%;
-    height: 33%;
+    width: 180px;
+    height: 190px;
     margin-top: 50px;
     display: flex;
     align-items: center;
@@ -266,30 +289,103 @@ body{
     font-size: 15px;
     text-align:center;
 }
+
+@media (max-width:600px){
+    .nav_item1, .nav_item2, .nav_item3, .nav_item4{
+        display: none;
+     
+    }
+    .nav_menu{
+        display: block;
+    }
+    .drp_button{
+        display: flex;
+        align-items: center;
+    }
+    .dropdown_menu{
+        display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  width: 50%;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+    }
+    .dropdown_menu a{
+        display: block;
+        
+    }
+    .nav_menu:hover .dropdown_menu {
+        display: block;
+        background-color: rgb(199, 98, 98);
+      }
+}
 @media (max-width:800px){
-   
-   
     .inpu{
         display: none;
     }
+    .bi-search{
+        left: 15px;
+    }
+    .dark{
+        margin-left: 40px;
+    }
   
-}
-@media (max-width:1200px){
-    .boxes{
-        display: block;
+    .main{
         width: 100%;
     }
+    .content{
+        width: 100%;
+    }
+    .boxes{
+        display: block;
+        /* width: 100%; */
+    }
+   
+}
+@media (max-width:1200px){
+   
     .service1{
         display: none;
     }
+    /* .nav_bar1{
+        width: 0vw;
+    } */
+    .main{
+        width: 100%;
+    }.content{
+        width: 100%;
+    }
 }
-@media (max-width:1100px){
+@media (max-width:1150px){
     .service2{
         display: none;
+    }
+    .main{
+        width: 100%;
+    }.content{
+        width: 100%;
+    }
+    .smallbox{
+        width: 120px;
+        height: 140px;
+        font-size: 55px;
+    }
+    .Lbootstrap{
+        width: 180px;
+    }
+    .Lbootstrap p{
+        font-size: 8px;
+    }.Lbootstrap i{
+        font-size: 8px;
     }
 }
 @media (max-width:1050px){
     .service3{
         display: none;
+    }
+    .main{
+        width: 100%;
+    }.content{
+        width: 100%;
     }
 }
