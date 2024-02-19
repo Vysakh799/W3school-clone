@@ -85,8 +85,11 @@ body{
     /* background-color: chartreuse; */
 }
 .services{
+    position: fixed;
     display: flex;
     width: 400px;
+    right: 15%;
+    top: 1.8%;
     /* background-color: cornsilk; */
     justify-content: space-evenly;
     align-items: center;
@@ -264,19 +267,18 @@ body{
     text-align:center;
 }
 @media (max-width:800px){
-    .boxes{
-        display: block;
-        width: 100%;
-    }
-    .content{
-        width: 100%;
-    }
+   
+   
     .inpu{
         display: none;
     }
   
 }
 @media (max-width:1200px){
+    .boxes{
+        display: block;
+        width: 100%;
+    }
     .service1{
         display: none;
     }
@@ -286,7 +288,7 @@ body{
         display: none;
     }
 }
-@media (max-width:1000px){
+@media (max-width:1050px){
     .service3{
         display: none;
     }
