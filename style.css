@@ -6,7 +6,8 @@ body{
     width: 100%;
 }
 .nav_bar1{
-    /* background-color: aquamarine; */
+    /* position: fixed; */
+    /* background-color: white ; */
     display: flex;
     height: 60px;
     /* position: fixed; */
@@ -142,7 +143,7 @@ body{
 }
 .login{
     position: fixed;
-    z-index: -1;
+    /* z-index: -1; */
     right:3.5%;
     width:115px ;
     color: black;
@@ -155,6 +156,7 @@ body{
     position: fixed;
     right: 8.5%;
     background-color: #04AA6D;
+    z-index: 1;
 }
 .nav_bar2{
     height: 25px;
@@ -223,12 +225,14 @@ body{
 }
 .boxe1{
     background-color: #846bae;
+    border-radius: 10px 0 0 10px;
 }
 .boxe2{
     background-color: #5f4884;
 }
 .boxe3{
     background-color: #6c3ec1;
+    border-radius: 0 10px 10px 0;
 }
 .Lbootstrap{
     display: flex;
