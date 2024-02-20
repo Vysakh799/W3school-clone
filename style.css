@@ -7,7 +7,7 @@ body{
 }
 .nav_bar1{
     margin-top: 0px;
-    position: absolute;
+    position: fixed;
     background-color: white ;
     display: flex;
     flex-direction: row;
@@ -51,8 +51,8 @@ body{
 }
 .dropdown_menu{
     display: none;
-    background-color: aliceblue;
-    width: fit-content;
+    /* background-color: aliceblue; */
+    width: 100%;
 }
 .dropdown_menu a{
     text-decoration: none;
@@ -151,7 +151,7 @@ body{
     border-radius: 25px;
 }
 .buttons{
-    margin-right: 40px;
+    /* margin-right: 40px; */
     display: flex;
     /* justify-content: flex-end; */
     width: 240px;
@@ -200,8 +200,11 @@ body{
     background-color: rgb(15, 13, 30);
     color: white;
     margin-top: 60px;
-    /* position: fixed; */
+    position: fixed;
     /* margin-top: 160px; */
+}
+.items{
+    width: 70px;
 }
 .nav_bar2 div:hover{
     background-color: black;
@@ -210,8 +213,8 @@ body{
     background-color: #04AA6D;
 }
 .items{
-    flex: 1;
-/* width: auto; */
+    /* flex: 1; */
+    width: 90px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -302,11 +305,26 @@ body{
     font-size: 15px;
     text-align:center;
 }
-
+@media (max-width:500px){
+    .mainhead{
+        /* display: none; */
+        font-size: 10px;
+        font-weight:200px ;
+        margin-top: 45px;
+    }
+    .subhead1, .subhead2{
+        font-size:10px;
+        /* margin-top: -px; */
+        font-weight:600;
+    }
+}
 @media (max-width:600px){
     .nav_item1, .nav_item2, .nav_item3, .nav_item4{
         display: none;
      
+    }
+    .nav_content{
+        width: 100px;
     }
     .nav_menu{
         display: block;
@@ -317,28 +335,47 @@ body{
     .drp_button{
         display: flex;
         align-items: center;
+        justify-content: center ;
     }
+   
     .dropdown_menu{
         display: none;
-  position: absolute;
-  background-color: #f9f9f9;
-  width: 50%;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  z-index: 1;
+        position: absolute;
+        /* background-color: #f9f9f9; */
+        width: 100%;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 1;
+        /* display: flex; */
+        justify-content: space-between;
+        border-radius: 0 25px 25px 25px;
     }
     .dropdown_menu a{
         display: block;
-        
+        margin-left: 25px;
+        color: white;
+    }
+    .dropdown_menu1{
+        margin-top: 10px;
     }
     .nav_menu:hover .dropdown_menu {
         display: block;
-        background-color: rgb(199, 98, 98);
-      }
-      .rightside{
+        background-color: rgb(18, 17, 30);
+    }
+    .rightside{
         display: flex;
         justify-content: flex-start;
         width:300px;
-      }
+    }
+    .mainhead{
+        font-size: 48px;
+        font-weight: 700;
+        margin-top: 45px;
+    }
+    .subhead1, .subhead2{
+        font-size:10px;
+        /* margin-top: -px; */
+        font-weight:600;
+    }
 }
 @media (max-width:800px){
     .inpu{
@@ -361,11 +398,22 @@ body{
         display: block;
         /* width: 100%; */
     }
+    .boxe1{
+        border-radius: 10px 10px 0 0;
+    }
+    .boxe3{
+        border-radius: 0 0 10px 10px;
+    }
     .rightside{
         display: flex;
         justify-content: flex-start;
         width:200px;
-      }
+    }
+    .subhead1, .subhead2{
+        font-size:18px;
+        /* margin-top: -px; */
+        font-weight:600;
+    }
      
 }
 @media (max-width:1200px){
@@ -453,7 +501,7 @@ body{
         font-size: 8px;
     }
 }
-@media (max-width:1400px){
+@media (max-width:1900px){
     .Lbootstrap{
         width: 150px;
     }
