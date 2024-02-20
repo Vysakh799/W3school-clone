@@ -7,15 +7,18 @@ body{
 }
 .nav_bar1{
     margin-top: 0px;
-    position: fixed;
+    position: absolute;
     background-color: white ;
     display: flex;
     flex-direction: row;
     height: 60px;
+    width: 100%;
     /* position: fixed; */
     
 }
 .main{
+    display: flex;
+    flex-direction: column;
     width: 100%;
     height: 100%;
     margin: 0px;
@@ -32,13 +35,14 @@ body{
 }
 .nav_content{
     margin-left: 15px;
-    width: 800px;
+    width: 640px;
     display: flex;
     /* background-color: red; */
 }
 .nav_item1, .nav_item2, .nav_item3, .nav_item4, .nav_menu{
     display: flex;
     flex: 1;
+/* width: 160px; */
     justify-content: center;
     /* background-color: blueviolet; */
 }
@@ -98,7 +102,8 @@ body{
     font-size: 18px;
 } */
 .rightside{
-    width: 500px;
+    width: 800px;
+    flex: 1;
     display: flex;
     justify-content: flex-end;
     /* background-color: chartreuse; */
@@ -148,14 +153,15 @@ body{
 .buttons{
     margin-right: 40px;
     display: flex;
-    width: 180px;
-    color: white;
+    /* justify-content: flex-end; */
+    width: 240px;
+    color: rgb(255, 255, 255);
     /* justify-content: space-between; */
     /* background-color: cornflowerblue;     */
 }
-.btn{
-    position: fixed;
-    background-color: brown;
+.btn{ 
+    /* position: fixed; */
+    /* background-color: brown; */
     border-radius: 25px;
     width: 90px;
     height: 45px;
@@ -165,8 +171,9 @@ body{
     align-items: center;
 }
 .login{
-    position: fixed;
+    /* position: fixed; */
     /* z-index: -1; */
+    margin-left: -35px;
     right:10px;
     width:115px ;
     color: black;
@@ -175,9 +182,13 @@ body{
 .login p{
     margin-left: 5%;
 }
+.login:hover{
+    background-color: #04AA6D;
+    color: whitesmoke;
+}
 .signup{
-    position: fixed;
-    right: 8.5%;
+    /* position: fixed; */
+    margin-left: 10px;
     background-color: #04AA6D;
     z-index: 1;
 }
@@ -185,9 +196,10 @@ body{
     height: 25px;
     display: flex;
     flex-direction: row;
-    padding-top: 4%;
+    /* padding-top: 4%; */
     background-color: rgb(15, 13, 30);
     color: white;
+    margin-top: 60px;
     /* position: fixed; */
     /* margin-top: 160px; */
 }
@@ -199,6 +211,7 @@ body{
 }
 .items{
     flex: 1;
+/* width: auto; */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -297,6 +310,9 @@ body{
     }
     .nav_menu{
         display: block;
+        justify-content: center;
+        align-items: center;
+        /* margin-left: 45px; */
     }
     .drp_button{
         display: flex;
@@ -317,6 +333,11 @@ body{
     .nav_menu:hover .dropdown_menu {
         display: block;
         background-color: rgb(199, 98, 98);
+      }
+      .rightside{
+        display: flex;
+        justify-content: flex-start;
+        width:300px;
       }
 }
 @media (max-width:800px){
@@ -340,7 +361,12 @@ body{
         display: block;
         /* width: 100%; */
     }
-   
+    .rightside{
+        display: flex;
+        justify-content: flex-start;
+        width:200px;
+      }
+     
 }
 @media (max-width:1200px){
    
@@ -354,6 +380,26 @@ body{
         width: 100%;
     }.content{
         width: 100%;
+    }
+    .rightside{
+        display: flex;
+        justify-content: flex-start;
+      }
+      .nav_item3{
+        display: none;
+      }
+      .rightside{
+        display: flex;
+        justify-content: flex-start;
+        width:400px;
+      }
+      .Lbootstrap{
+        width: 180px;
+    }
+    .Lbootstrap p{
+        font-size: 15px;
+    }.Lbootstrap i{
+        font-size: 8px;
     }
 }
 @media (max-width:1150px){
@@ -374,10 +420,15 @@ body{
         width: 180px;
     }
     .Lbootstrap p{
-        font-size: 8px;
+        font-size: 15px;
     }.Lbootstrap i{
         font-size: 8px;
     }
+    .rightside{
+        display: flex;
+        justify-content: flex-start;
+        width:400px;
+      }
 }
 @media (max-width:1050px){
     .service3{
@@ -387,5 +438,28 @@ body{
         width: 100%;
     }.content{
         width: 100%;
+    }
+    .rightside{
+        display: flex;
+        justify-content: flex-start;
+        width:200px;
+      }
+      .Lbootstrap{
+        width: 130px;
+    }
+    .Lbootstrap p{
+        font-size: 13px;
+    }.Lbootstrap i{
+        font-size: 8px;
+    }
+}
+@media (max-width:1400px){
+    .Lbootstrap{
+        width: 150px;
+    }
+    .Lbootstrap p{
+        font-size: 13px;
+    }.Lbootstrap i{
+        font-size: 8px;
     }
 }
