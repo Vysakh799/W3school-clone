@@ -9,7 +9,7 @@ body{
     margin-top: 0px;
     position: fixed;
     background-color: white ;
-    display: flex;
+    display: flex; 
     flex-direction: row;
     height: 60px;
     width: 100%;
@@ -23,7 +23,7 @@ body{
     height: 100%;
     margin: 0px;
 }
-.logo img{
+.nav_bar1 .logo img{
     width: 40px;
     margin-left: 40px;
     margin-top:10px ;
@@ -315,42 +315,133 @@ body{
     background-color: rgb(15, 13, 30);
 
 }
-.logo{
+.footerhead .logo img{
+    width: 40px;
+
     /* background-color: azure; */
-    margin-left: -30px;
+    margin-left: 40px
 }
 .smhead{
     display: flex;
     /* background-color: aqua; */
-    margin-left: 100px;
-    width: 60%;
+    /* margin-left: 100px; */
+    width: 80%;
 }
 .smhead1{
-    flex: 1;
+    /* flex: 1; */
+    width: 250px;
     font-weight: 500;
     color: rgb(154, 130, 12);
+    display: flex;
+    justify-content: center;
+    /* background-color: aqua; */
 }
 .footercontent{
+    margin-top: -50px;
     display: flex;
+    justify-content: center;
+    background-color: rgb(15, 13, 30);
+    /* margin-left: 200px; */
+    color: whitesmoke;
 }
 .content1, .content2, .content3, .content4{
     display: block;
+    /* background-color: aqua; */
+    /* margin-left: 200px; */
+padding: 0px 90px;
+    /* margin-left: 200px; */
+
 }
+/* .content1{
+    margin-left: 300px;
+} */
 .cntbody{
     display: block;
+    font-size: 12px;
+    line-height: 5px;
 }
-@media (max-width:500px){
-    .mainhead{
+.cnthead{
+    font-weight: bold;
+}
+.footerfoot{
+    background-color: rgb(15, 13, 30);
+    /* background-color: #04AA6D; */
+    /* width: fit-content; */
+    color: whitesmoke;
+}
+.firstline{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 200px;
+    /* background-color: blue; */
+    font-size: 13px;
+    padding-top: 200px;
+    
+}
+.footerpara{
+    /* background-color: burlywood; */
+    /* width: 800px; */
+    font-size: 12px;
+    margin-top: -12px;
+}
+.footercopy{
+    font-size: 12px;
+    padding-bottom: 200px;
+    /* margin-top: -12px; */
+}
+.bi-facebook, .bi-discord, .bi-linkedin, .bi-instagram{
+    font-size: 18px;
+}
+.firstline, .footerpara, .footercopy{
+    margin-left: 180px;
+}
+@media (max-width:400px){
+    .mainhead p{
         /* display: none; */
-        font-size: 10px;
+        font-size: 35px;
         font-weight:200px ;
-        margin-top: 45px;
+        margin-top: 60px;
     }
-    .subhead1, .subhead2{
-        font-size:10px;
+    .subhead1 p{
+        font-size: 10px;
         /* margin-top: -px; */
-        font-weight:600;
+        /* font-weight:600; */
     }
+    .subhead2 p{
+        font-size:13px;
+    }
+
+}
+@media (max-width:550px){
+    .mainhead p{
+        /* display: none; */
+        font-size: 35px;
+        font-weight:200px ;
+        margin-top: 60px;
+    }
+    .subhead1 p{
+        font-size:15px;
+        /* margin-top: -px; */
+        /* font-weight:600; */
+    }
+    .subhead2 p{
+        font-size:15px;
+    }
+    .footerfoot{
+        margin-left: -100px;
+        margin-top: -50px;
+    }
+    .rightside{
+        display: flex;
+        /* justify-content: flex-start; */
+        width:fit-content;
+        /* background-color: aqua; */
+    }
+    .buttons{
+        margin-left: -350px;
+    }
+
 }
 @media (max-width:600px){
     .nav_item1, .nav_item2, .nav_item3, .nav_item4{
@@ -455,6 +546,12 @@ body{
     .nav_item2{
         display: none;
     }
+    .smhead{
+        /* margin-left: -0px */
+        /* margin-right: 25px; */
+        width: auto;
+    }
+    
 }
 @media (max-width:1200px){
    
@@ -489,6 +586,25 @@ body{
     }.Lbootstrap i{
         font-size: 8px;
     }
+    .cntbody{
+        line-height: 13px;
+    }
+    .content4{
+        padding: 0px 40px;
+    }
+    .content3{
+        padding: 0px 40px;
+    }
+    .content2{
+        padding: 0px 40px;
+    }
+    .content1{
+        padding: 0px 40px;
+    }
+    .smhead{
+        font-size: 15px;
+        width: 80%;
+    }
 }
 @media (max-width:1150px){
     .service2{
@@ -517,6 +633,9 @@ body{
         justify-content: flex-start;
         width:400px;
       }
+      .footerhead{
+     padding-left: -30px;
+      }
 }
 @media (max-width:1050px){
     .service3{
@@ -540,6 +659,18 @@ body{
     }.Lbootstrap i{
         font-size: 8px;
     }
+    .content4{
+        padding: 0px 32px;
+    }
+    .content3{
+        padding: 0px 32px;
+    }
+    .content2{
+        padding: 0px 32px;
+    }
+    .content1{
+        padding: 0px 32px;
+    }
 }
 @media (max-width:1900px){
     .Lbootstrap{
@@ -549,5 +680,32 @@ body{
         font-size: 13px;
     }.Lbootstrap i{
         font-size: 8px;
+    }
+}
+@media (max-width:1000px){
+    .footerhead
+    {
+        display: flex; 
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        height: 350px;
+    }
+    .smhead{
+        line-height: 30px;
+        display: flex; 
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .footercontent{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    .footerhead .logo img{
+        margin-left: 0px;
     }
 }
